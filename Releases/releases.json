@@ -2,16 +2,32 @@
   "_comment": "Single source of truth for the public releases index. Add one entry per release, then run `bun Tools/GenerateReleasesPage.ts`. Every Releases/v*/ directory MUST have an entry here or the generator fails.",
   "releases": [
     {
+      "dir": "v7.0.0",
+      "version": "7.0.0",
+      "title": "The Bitter Pill Release",
+      "summary": "The biggest philosophical shift in LifeOS: stop over-instructing the model and let it think. Bitter Pill Engineering swept scaffolding out of the whole system, the always-loaded context shrank by roughly two-thirds, and modes and tiers were retired in favor of one adaptive loop.",
+      "bullets": [
+        "Bitter Pill Engineering: reasoning choreography, self-scores, and duplicated routing cut across the system \u2014 the model discovers how hard to work from the task, not a rubric",
+        "Always-loaded context reduced ~69% (the Algorithm doctrine plus its old capabilities file went from ~88KB to ~28KB)",
+        "Modes and tiers retired: one unified response format and one Algorithm loop that scales spend to what the work reveals",
+        "The Algorithm (v8.3.0): the unified thinking system \u2014 ISA as both the hill and the instrument, claims closed only on tool evidence",
+        "AlgorithmNudge: a single deterministic live-nudge layer (skill-routing, ISA freshness, spend, claim-close) replacing scattered hooks",
+        "~16 hooks consolidated into per-event dispatchers; the whole hook layer audited and simplified",
+        "Community fixes merged: work-events replay race, DA-name de-hardcoding, config-driven identity, and more"
+      ],
+      "era": "current"
+    },
+    {
       "dir": "v6.0.5",
       "version": "6.0.5",
       "date": "2026-07-04",
       "title": "Rename in the Code, New Harvest Skill",
-      "summary": "Carries the PAI→LifeOS rename the rest of the way through the codebase, adds the Harvest skill, and sharpens the Algorithm's verification doctrine. Same system as 6.0.0, cleaner throughout.",
+      "summary": "Carries the PAI\u2192LifeOS rename the rest of the way through the codebase, adds the Harvest skill, and sharpens the Algorithm's verification doctrine. Same system as 6.0.0, cleaner throughout.",
       "bullets": [
-        "PAI→LifeOS rename reaches the code — identifiers and prose read LifeOS throughout; runtime-critical paths left byte-identical on purpose",
-        "New Harvest skill — mine any URL, video, or article for what's useful to your LifeOS; report-only",
-        "Algorithm v6.24.0 — motion verification: animation, transition, and multi-step-flow ISCs close on a frame-scrub gallery, not a single screenshot",
-        "Installer fix — bootstrap install.sh now fetches the version it advertises"
+        "PAI\u2192LifeOS rename reaches the code \u2014 identifiers and prose read LifeOS throughout; runtime-critical paths left byte-identical on purpose",
+        "New Harvest skill \u2014 mine any URL, video, or article for what's useful to your LifeOS; report-only",
+        "Algorithm v6.24.0 \u2014 motion verification: animation, transition, and multi-step-flow ISCs close on a frame-scrub gallery, not a single screenshot",
+        "Installer fix \u2014 bootstrap install.sh now fetches the version it advertises"
       ],
       "era": "current"
     },
@@ -22,7 +38,7 @@
       "title": "Comprehensive AI-native install",
       "summary": "Makes the install doc comprehensive and gets the constitutional layer loading on its own.",
       "bullets": [
-        "Comprehensive component menu — INSTALL.md lays out the full two-tier model: Core plus à-la-carte enhancements (hooks, statusline, tooltips, spinner verbs, agents, Pulse, background jobs)",
+        "Comprehensive component menu \u2014 INSTALL.md lays out the full two-tier model: Core plus \u00e0-la-carte enhancements (hooks, statusline, tooltips, spinner verbs, agents, Pulse, background jobs)",
         "The `lifeos` launch alias wires `--append-system-prompt-file` so the constitutional layer actually loads",
         "One canonical INSTALL.md rendered at ourlifeos.ai/install for humans and AIs"
       ],
@@ -46,10 +62,10 @@
       "version": "6.0.0",
       "date": "2026-07-02",
       "title": "The Life Operating System",
-      "summary": "LifeOS ships as a single self-contained skill, not a `.claude/` copy — the full framework installs through your AI.",
+      "summary": "LifeOS ships as a single self-contained skill, not a `.claude/` copy \u2014 the full framework installs through your AI.",
       "bullets": [
         "Algorithm v6.23.0",
-        "Two-tier core components: Current→Ideal, the Algorithm, Skills, Hooks, Router, Pulse, custom spinner verbs, and custom tooltips, plus the supporting subsystems (Memory, Agents, Voice, Learning, Security)",
+        "Two-tier core components: Current\u2192Ideal, the Algorithm, Skills, Hooks, Router, Pulse, custom spinner verbs, and custom tooltips, plus the supporting subsystems (Memory, Agents, Voice, Learning, Security)",
         "Skill-only distribution via the LifeOS install skill",
         "Full Pulse Life Dashboard + menu bar app"
       ],
@@ -81,7 +97,7 @@
       "dir": "v4.0.2",
       "version": "4.0.2",
       "title": "Bug Fix Patch",
-      "summary": "13 surgical fixes — no new features, no breaking changes.",
+      "summary": "13 surgical fixes \u2014 no new features, no breaking changes.",
       "bullets": [
         "Linux compatibility: cross-platform OAuth token extraction, GNU coreutils `tr` fix",
         "Installer: correct alias path, shell detection (bash/fish/zsh), headless CLI fallback",
@@ -140,7 +156,7 @@
       "dir": "v2.5",
       "version": "2.5.0",
       "title": "Think Deeper, Execute Faster",
-      "summary": "The Algorithm learns metacognition — thinking about how it thinks — and parallel execution.",
+      "summary": "The Algorithm learns metacognition \u2014 thinking about how it thinks \u2014 and parallel execution.",
       "bullets": [
         "28 Skills, 17 Hooks, 356 Workflows",
         "Two-pass capability selection with ISC validation",

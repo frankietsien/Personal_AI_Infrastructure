@@ -25,7 +25,23 @@ LifeOS ships as a **single self-contained skill** — your AI installs it for yo
 
 ## Available Releases
 
-### v6.0.5 — Rename in the Code, New Harvest Skill (Current)
+### v7.0.0 — The Bitter Pill Release (Current)
+
+The biggest philosophical shift in LifeOS: stop over-instructing the model and let it think. Bitter Pill Engineering swept scaffolding out of the whole system, the always-loaded context shrank by roughly two-thirds, and modes and tiers were retired in favor of one adaptive loop.
+
+- Bitter Pill Engineering: reasoning choreography, self-scores, and duplicated routing cut across the system — the model discovers how hard to work from the task, not a rubric
+- Always-loaded context reduced ~69% (the Algorithm doctrine plus its old capabilities file went from ~88KB to ~28KB)
+- Modes and tiers retired: one unified response format and one Algorithm loop that scales spend to what the work reveals
+- The Algorithm (v8.3.0): the unified thinking system — ISA as both the hill and the instrument, claims closed only on tool evidence
+- AlgorithmNudge: a single deterministic live-nudge layer (skill-routing, ISA freshness, spend, claim-close) replacing scattered hooks
+- ~16 hooks consolidated into per-event dispatchers; the whole hook layer audited and simplified
+- Community fixes merged: work-events replay race, DA-name de-hardcoding, config-driven identity, and more
+
+**[Get v7.0.0 →](v7.0.0/)**
+
+---
+
+### v6.0.5 — Rename in the Code, New Harvest Skill
 
 Carries the PAI→LifeOS rename the rest of the way through the codebase, adds the Harvest skill, and sharpens the Algorithm's verification doctrine. Same system as 6.0.0, cleaner throughout.
 

@@ -24,8 +24,8 @@
 
 <!-- Content -->
 [![Get Started](https://img.shields.io/badge/🚀_Get_Started-Install-22C55E?style=flat)](#install)
-[![Release](https://img.shields.io/badge/Release-v6.0.5-8B5CF6?style=flat)](Releases/v6.0.5/)
-[![Algorithm](https://img.shields.io/badge/Algorithm-v6.24.0-D97706?style=flat)](Releases/v6.0.5/README.md)
+[![Release](https://img.shields.io/badge/Release-v7.0.0-8B5CF6?style=flat)](Releases/v7.0.0/)
+[![Algorithm](https://img.shields.io/badge/Algorithm-v8.3.0-D97706?style=flat)](Releases/v7.0.0/README.md)
 [![Pulse](https://img.shields.io/badge/Pulse-included-3B82F6?style=flat)](https://ourlifeos.ai)
 [![Contributors](https://img.shields.io/github/contributors/danielmiessler/LifeOS?style=flat&logo=githubsponsors&logoColor=white&label=Contributors&color=EC4899)](https://github.com/danielmiessler/LifeOS/graphs/contributors)
 
@@ -221,12 +221,13 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 <br/>
 
-**v6.0.5 (2026-07-04) — Rename in the Code, New Harvest Skill**
-- **PAI→LifeOS rename reaches the code** — code identifiers and doc prose now read LifeOS throughout; runtime-critical paths and regexes were left byte-identical on purpose, so the prose is clean and nothing breaks.
-- **New Harvest skill** — mine any URL, video, or article for what's genuinely useful to your LifeOS, ranked and mapped against your whole system. Report-only; adoption is a separate step.
-- **Algorithm v6.24.0** — motion verification: an ISC about animation, transition, or a multi-step flow closes on a frame-scrub gallery, never a single screenshot.
-- **Installer fix** — the bootstrap `install.sh` now fetches the version it advertises.
-- [Full release notes](Releases/v6.0.5/README.md)
+**v7.0.0 — The Bitter Pill Release**
+- **Bitter Pill Engineering** — scaffolding cut across the whole system on one test: would a smarter model make this rule unnecessary? Reasoning choreography, self-scores, and duplicated routing are gone; the verification kernel stays.
+- **Context roughly two-thirds smaller** — the always-loaded doctrine plus its old capabilities file went from ~88KB to ~28KB, so every turn is faster and sharper.
+- **Modes and tiers retired** — one adaptive response format and one Algorithm loop that scales spend to what the work reveals, discovered not predicted.
+- **The Algorithm v8.3.0** — the ISA is both the hill and the instrument; claims close only on tool evidence, and a single deterministic AlgorithmNudge layer keeps a run on track.
+- **Hook layer consolidated** — ~16 hooks folded into per-event dispatchers, plus community fixes for a work-events race, DA-name de-hardcoding, and config-driven identity.
+- [Full release notes](Releases/v7.0.0/README.md)
 
 **v6.0.3 (2026-07-04) — Comprehensive AI-native install**
 - Comprehensive component menu — INSTALL.md lays out the full two-tier model: Core plus à-la-carte enhancements (hooks, statusline, tooltips, spinner verbs, agents, Pulse, background jobs)
